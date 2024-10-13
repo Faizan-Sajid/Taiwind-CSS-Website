@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import contact from "./assests/contact-bg.jpg"
 import SmoothAnimatedSection from "./animation"
 

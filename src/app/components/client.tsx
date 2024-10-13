@@ -2,7 +2,7 @@ import Image from "next/image";
 import facebok from "./assests/Facebook-Logo-2015-present.jpg";
 import apple from "./assests/apple logo.webp";
 import youtube from "./assests/youtube.jpg";
-import microsoft from "./assests/microsoft.jpg";
+// import microsoft from "./assests/microsoft.jpg";
 import Google from "./assests/google.webp";
 import Marquee from "react-fast-marquee";
 import SmoothAnimatedSection from "./animation"
@@ -37,11 +37,11 @@ function Client() {
             alt="youtube-logo"
             className="w-24 md:w-40 lg:w-56"
           />
-          <Image
+          {/* <Image
             src={microsoft}
             alt="microsoft-logo"
             className="w-24 md:w-40 lg:w-56"
-          />
+          /> */}
           <Image
             src={Google}
             alt="google-logo"

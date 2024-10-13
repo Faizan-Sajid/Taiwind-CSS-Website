@@ -1,11 +1,11 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 import CountUp from "react-countup";
-import ScrollTrigger from "react-scroll-trigger";
+// import ScrollTrigger from "react-scroll-trigger";
 import SmoothAnimatedSection from "./animation"
 
 function About() {
-    const [couter,setcounter] = useState(false)
+    // const [couter,setcounter] = useState(false)
   return (
    
     <section className="bg-[#39b54a] py-24 px-4 md:px-8 lg:px-16">
@@ -25,12 +25,12 @@ function About() {
         </p>
 
         {/* Count-up section with responsive layout */}
-        <ScrollTrigger onEnter={()=> setcounter(true)} onExit={()=>setcounter(false)}>
+        {/* <ScrollTrigger onEnter={()=> setcounter(true)} onExit={()=>setcounter(false)}> */}
         
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 mt-12">
        
           <div className="text-center border-r-2 lg:pr-6 border-white border-opacity-50">
-            {couter && <CountUp start={0} end={127} duration={3} delay={0} className="text-[48px] sm:text-[60px] lg:text-[84px] font-bold text-white" />}
+            <CountUp start={0} end={127} duration={3} delay={0} className="text-[48px] sm:text-[60px] lg:text-[84px] font-bold text-white" />
             
             <span className="text-black text-[14px] sm:text-[16px] md:text-[18px] block font-bold mt-2">
               Award Received
@@ -38,28 +38,28 @@ function About() {
           </div>
 
           <div className="text-center border-r-2 lg:pr-6 border-white border-opacity-50">
-            {couter && <CountUp start={0} end={900} duration={2} delay={0} className="text-[48px] sm:text-[60px] lg:text-[84px] font-bold text-white " />}
+             <CountUp start={0} end={900} duration={2} delay={0} className="text-[48px] sm:text-[60px] lg:text-[84px] font-bold text-white " />
             <span className="text-black text-[14px] sm:text-[16px] md:text-[18px] block font-bold mt-2">
               Cup of Coffee
             </span>
           </div>
 
           <div className="text-center border-r-2 lg:pr-6 border-white border-opacity-50">
-            {couter && <CountUp start={0} end={109} duration={3} delay={0} className="text-[48px] sm:text-[60px] lg:text-[84px] font-bold text-white " />}
+            <CountUp start={0} end={109} duration={3} delay={0} className="text-[48px] sm:text-[60px] lg:text-[84px] font-bold text-white " />
             <span className="text-black text-[14px] sm:text-[16px] md:text-[18px] block font-bold mt-2">
               Projects Completed
             </span>
           </div>
 
           <div className="text-center">
-            {couter && <CountUp start={0} end={900} duration={2} delay={0} className="text-[48px] sm:text-[60px] lg:text-[84px] font-bold text-white" />}
+             <CountUp start={0} end={900} duration={2} delay={0} className="text-[48px] sm:text-[60px] lg:text-[84px] font-bold text-white" />
             <span className="text-black text-[14px] sm:text-[16px] md:text-[18px] block font-bold mt-2">
               Happy Clients
             </span>
           </div>
          
         </div>
-        </ScrollTrigger>
+        {/* </ScrollTrigger> */}
         
       </div>
       </SmoothAnimatedSection>
