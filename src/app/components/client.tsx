@@ -10,22 +10,22 @@ import SmoothAnimatedSection from "./animation"
 
 function Client() {
   return (
-    <div className="mt-9 text-center p-6 md:p-12 lg:p-20">
+    <div className="mt-9 text-center p-6 md:p-12 lg:p-20 bg-white">
       <SmoothAnimatedSection>
-      <h3 className="text-green-500 text-lg md:text-xl lg:text-2xl font-sans font-bold">
+      <h3 className="text-green-500 text-lg md:text-xl lg:text-2xl font-sans font-bold bg-white">
         Our Clients
       </h3>
-      <h1 className="text-black text-3xl md:text-5xl lg:text-6xl font-sans font-bold">
+      <h1 className="text-black text-3xl md:text-5xl lg:text-6xl bg-white  font-bold">
         Glint has been honored to partner <br className="hidden md:block" />
         up with these clients
       </h1>
 
       <Marquee speed={50} pauseOnHover>
-        <div className="flex items-center justify-center space-x-4 mt-10">
+        <div className="flex items-center justify-center space-x-4 mt-10 bg-white">
           <Image
             src={facebok}
             alt="facebook-logo"
-            className="w-24 md:w-40 lg:w-56"
+            className="w-24 md:w-40 lg:w-56 "
           />
           <Image
             src={apple}
